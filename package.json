@@ -1,0 +1,25 @@
+{
+  "name": "jsalgos",
+  "version": "1.0.0",
+  "description": "A repository containing a different Algorithms (mostly asked in interview questions) implemented in JavaScript alongside their test cases written in Jest.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashovardhanagrawal/JSAlgos.git"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yashovardhanagrawal/JSAlgos/issues"
+  },
+  "homepage": "https://github.com/yashovardhanagrawal/JSAlgos#readme",
+  "dependencies": {
+    "jest": "^24.9.0"
+  }
+}
