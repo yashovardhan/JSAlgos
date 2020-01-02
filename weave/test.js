@@ -1,21 +1,6 @@
 const weave = require('./index');
 const Queue = require('./queue');
 
-test('queues have a peek function', () => {
-  const q = new Queue();
-  expect(typeof q.peek).toEqual('function');
-});
-
-test('peek returns, but does not remove, the first value', () => {
-  const q = new Queue();
-  q.add(1);
-  q.add(2);
-  expect(q.peek()).toEqual(1);
-  expect(q.peek()).toEqual(1);
-  expect(q.remove()).toEqual(1);
-  expect(q.remove()).toEqual(2);
-});
-
 test('weave is a function', () => {
   expect(typeof weave).toEqual('function');
 });

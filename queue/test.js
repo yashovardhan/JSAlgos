@@ -29,3 +29,18 @@ test('Order of elements is maintained', () => {
   expect(q.remove()).toEqual(3);
   expect(q.remove()).toEqual(undefined);
 });
+
+test("queues have a peek function", () => {
+  const q = new Queue();
+  expect(typeof q.peek).toEqual("function");
+});
+
+test("peek returns, but does not remove, the first value", () => {
+  const q = new Queue();
+  q.add(1);
+  q.add(2);
+  expect(q.peek()).toEqual(1);
+  expect(q.peek()).toEqual(1);
+  expect(q.remove()).toEqual(1);
+  expect(q.remove()).toEqual(2);
+});
